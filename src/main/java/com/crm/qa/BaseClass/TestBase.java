@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -28,7 +27,7 @@ public class TestBase
 		try 
 		{
 			property = new Properties();
-			FileInputStream ip = new FileInputStream("D:\\Pavan_JavaPractice\\Automation\\BDDFramework\\src\\main\\java\\com\\crm\\qa\\Configuration\\Configuration.properties");
+			FileInputStream ip = new FileInputStream("D:\\Pavan_JavaPractice\\Automation\\BDDFrameworkJUnit\\src\\main\\java\\com\\crm\\qa\\Configuration\\Configuration.properties");
 			property.load(ip);
 		} 
 		catch (FileNotFoundException e)

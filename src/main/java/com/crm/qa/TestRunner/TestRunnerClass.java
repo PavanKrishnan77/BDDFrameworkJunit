@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions
-(features = {"D:\\Pavan_JavaPractice\\Automation\\BDDFramework\\src\\main\\java\\com\\crm\\qa\\Features\\LoginFeature_2.feature"}, //Path of the Feature Files.
+(features = {"D:\\Pavan_JavaPractice\\Automation\\BDDFrameworkJUnit\\src\\main\\java\\com\\crm\\qa\\Features\\LoginFeature_1.feature"}, //Path of the Feature Files.
 glue= {"com.crm.qa.StepDefinitions"}, //Path of the Step Definition Files.
 format = {"pretty", "html:test-output", "junit:junit_xml/cucumber.xml"}, //To Generate Output in Different types of Reports.
 monochrome = true, //To display Console Output in Very Readable Format.
