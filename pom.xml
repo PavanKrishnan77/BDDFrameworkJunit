@@ -4,7 +4,7 @@
   <artifactId>BDDFramework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
- <dependencies>
+<dependencies>
 	<dependency>
 		<groupId>info.cukes</groupId>
 		<artifactId>cucumber-java</artifactId>

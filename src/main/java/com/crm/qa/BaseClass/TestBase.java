@@ -27,7 +27,7 @@ public class TestBase
 		try 
 		{
 			property = new Properties();
-			FileInputStream ip = new FileInputStream("D:\\Pavan_JavaPractice\\Automation\\BDDFrameworkJUnit\\src\\main\\java\\com\\crm\\qa\\Configuration\\Configuration.properties");
+			FileInputStream ip = new FileInputStream("D:\\Automation_Workspace\\BDDFrameworkJunit\\src\\main\\java\\com\\crm\\qa\\Configuration\\Configuration.properties");
 			property.load(ip);
 		} 
 		catch (FileNotFoundException e)
