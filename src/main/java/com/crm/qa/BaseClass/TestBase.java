@@ -17,12 +17,11 @@ import com.crm.qa.Utilities.WebEventListener;
 public class TestBase
 {
 	public static WebDriver driver; 
-	public static Properties property; //Making public So that we can use in all Child Classes.
+	public static Properties property;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
 	
-	//Using Base Class we are achieving Inheritance Concept from Java.
-	public TestBase() //Constructor to read data from property file.
+	public TestBase()
 	{
 		try 
 		{
@@ -40,7 +39,7 @@ public class TestBase
 		}
 	}
 	
-	public static void initialization() //Read the properties from Configuration File
+	public static void initialization() 
 	{
 		String broswerName = property.getProperty("Browser");
 		

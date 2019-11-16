@@ -9,15 +9,13 @@ import com.crm.qa.BaseClass.TestBase;
 
 public class LoginPage extends TestBase 
 {
-	//Page Factory or Object Repository Where we store all WebElements.
-	//@FindBy will automatically do => driver.findElement(By.name(""));
 	@FindBy(name="username")
 	WebElement username;
 	
 	@FindBy(name="password")
 	WebElement password;
 	
-	@FindBy(xpath="//input[@class='btn btn-small' and @type='submit']") //Custom XPath We are Using here
+	@FindBy(xpath="//input[@class='btn btn-small' and @type='submit']") 
 	WebElement loginButton;
 	
 	@FindBy(xpath="//button[contains(text(),'Sign Up')]")
@@ -26,14 +24,11 @@ public class LoginPage extends TestBase
 	@FindBy(xpath="//img[contains(@class,'img-responsive')]")
 	WebElement crmLogo;
 	
-	//Initializing [Page Objects] all Object Repositories Elements with help of Page Factory in Constructor
-	//We initialize Page Factory Using initElements(driver, this) //This refers to Current Class Object
 	public LoginPage()
 	{
 		PageFactory.initElements(driver, this);
 	}
 	
-	//Verify the Title of the Login Page
 	public String validateLoginPageTitle()
 	{
 		return driver.getTitle();
@@ -41,7 +36,7 @@ public class LoginPage extends TestBase
 	
 	public boolean validateCRMImage()
 	{
-		return crmLogo.isDisplayed(); //It will return True Or False if the Logo is Present Or No.
+		return crmLogo.isDisplayed();
 	}
 	
 	public HomePage login(String uname, String pword)
@@ -52,7 +47,7 @@ public class LoginPage extends TestBase
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", loginButton);
 				
-		return new HomePage(); //Since Login Page is Landing on HomePage
+		return new HomePage();
 	}
 }
 

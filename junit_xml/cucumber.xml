@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="78.819217">
-<testcase classname="CRM Login" name="Free CRM Login Test Scenario" time="44.783342">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="32.876785">
+<testcase classname="CRM Login" name="Free CRM Login Test Scenario" time="17.294959">
 <system-out><![CDATA[Given User is already on Login Page.........................................passed
 When Title of login page is Free CRM........................................passed
 Then User enters "pavanreddy" and "Saibaba77" and click on login button.....passed
 Then User is on home page...................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="CRM Login" name="Free CRM Login Test Scenario 2" time="34.035875">
+<testcase classname="CRM Login" name="Free CRM Login Test Scenario 2" time="15.581826">
 <system-out><![CDATA[Given User is already on Login Page.........................................passed
 When Title of login page is Free CRM........................................passed
 Then User enters "pavanreddy" and "Saibaba77" and click on login button.....passed
