@@ -1,16 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0">
-<testcase classname="CRM Application Login Test" name="Free CRM Login Test" time="0">
-<system-out><![CDATA[Given User is already on Login Page.........................................skipped
-When Title of Login Page is Free CRM........................................skipped
-Then User enters "pavanreddy" and "Saibaba77" and click on login button.....skipped
-Then User is on Home Page...................................................skipped
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="42.598239">
+<testcase classname="CRM Application Login Test" name="Free CRM Login Test" time="21.49401">
+<system-out><![CDATA[Given User is already on Login Page.........................................passed
+When Title of Login Page is Free CRM........................................passed
+Then User enters "pavanreddy" and "Saibaba77" and click on login button.....passed
+Then User is on Home Page...................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="CRM Application Login Test" name="Free CRM Login Test 2" time="0">
-<system-out><![CDATA[Given User is already on Login Page.........................................skipped
-When Title of Login Page is Free CRM........................................skipped
-Then User enters "pavanreddy" and "Saibaba77" and click on login button.....skipped
-Then User is on Home Page...................................................skipped
+<testcase classname="CRM Application Login Test" name="Free CRM Login Test 2" time="21.103798">
+<system-out><![CDATA[Given User is already on Login Page.........................................passed
+When Title of Login Page is Free CRM........................................passed
+Then User enters "pavanreddy" and "Saibaba77" and click on login button.....passed
+Then User is on Home Page...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Tags in Cucumber" name="Verify Login" time="0.000154">
+<system-out><![CDATA[Given This is a Valid Login Test............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Tags in Cucumber" name="Verify Logout" time="0.000134">
+<system-out><![CDATA[Given This is a Valid Logout Test...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Tags in Cucumber" name="Verify Search" time="0.000143">
+<system-out><![CDATA[Given This is a Search Test.................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -12,9 +12,9 @@ import cucumber.api.junit.Cucumber;
 		plugin = {"pretty", "html:test-output", "junit:junit_xml/cucumber.xml"}, 
 		monochrome = true, 
 		strict = true,
-		dryRun=true,
-		tags={"@SanityTest"})
-		//tags={"@SanityTest, @SmokeTest"})
+		dryRun=false,
+		//tags={"@SmokeTest"})
+		tags={"@SanityTest, @RegressionTest"})
 
 public class TestRunnerFile 
 {

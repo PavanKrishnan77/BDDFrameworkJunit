@@ -2,7 +2,7 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "line": 2,
   "name": "CRM Application Login Test",
-  "description": "",
+  "description": "Description: To Test the Login Functionality of CRM Application",
   "id": "crm-application-login-test",
   "keyword": "Feature",
   "tags": [
@@ -15,12 +15,8 @@ formatter.feature({
 formatter.scenarioOutline({
   "comments": [
     {
-      "line": 4,
-      "value": "#Without Examples Keyword"
-    },
-    {
       "line": 5,
-      "value": "#Logging in Normally - Taking UserName and Password from Property File"
+      "value": "#Normal Login - Taking UserName and Password from Property File"
     },
     {
       "line": 6,
@@ -163,13 +159,15 @@ formatter.match({
   "location": "LoginPageTest.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 14460514843,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginPageTest.title_of_login_page_is_Free_CRM()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 52817616,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -185,13 +183,15 @@ formatter.match({
   "location": "LoginPageTest.user_enters_and_and_click_on_login_button(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 6965840690,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginPageTest.user_is_on_home_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 14837169,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 24,
@@ -239,13 +239,15 @@ formatter.match({
   "location": "LoginPageTest.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 15131300432,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginPageTest.title_of_login_page_is_Free_CRM()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13198806,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -261,12 +263,114 @@ formatter.match({
   "location": "LoginPageTest.user_enters_and_and_click_on_login_button(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5940836060,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginPageTest.user_is_on_home_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 18462841,
+  "status": "passed"
+});
+formatter.uri("Tags.feature");
+formatter.feature({
+  "line": 2,
+  "name": "Tags in Cucumber",
+  "description": "Description: To Test Tags Concept",
+  "id": "tags-in-cucumber",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Tags"
+    }
+  ]
+});
+formatter.scenario({
+  "line": 6,
+  "name": "Verify Login",
+  "description": "",
+  "id": "tags-in-cucumber;verify-login",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 5,
+      "name": "@SmokeTest"
+    },
+    {
+      "line": 5,
+      "name": "@RegressionTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 7,
+  "name": "This is a Valid Login Test",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "TagsTest.this_is_a_Valid_Login_Test()"
+});
+formatter.result({
+  "duration": 154412,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 10,
+  "name": "Verify Logout",
+  "description": "",
+  "id": "tags-in-cucumber;verify-logout",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 9,
+      "name": "@SanityTest"
+    },
+    {
+      "line": 9,
+      "name": "@RegressionTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 11,
+  "name": "This is a Valid Logout Test",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "TagsTest.this_is_a_Valid_Logout_Test()"
+});
+formatter.result({
+  "duration": 133887,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 14,
+  "name": "Verify Search",
+  "description": "",
+  "id": "tags-in-cucumber;verify-search",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 13,
+      "name": "@RegressionTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 15,
+  "name": "This is a Search Test",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "TagsTest.this_is_a_Search_Test()"
+});
+formatter.result({
+  "duration": 143216,
+  "status": "passed"
 });
 });
