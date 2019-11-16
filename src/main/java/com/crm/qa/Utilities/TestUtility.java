@@ -18,9 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.crm.qa.BaseClass.TestBase;
 
 public class TestUtility extends TestBase
-{
-	//Here we write all common methods which are available for all the Classes.
-	
+{	
 	//1. These 2 variable we used in TestBase Class for Page Load and Implicit Wait.
 	public static long Page_Load_TimeOut = 20;
 	public static long Implicit_Wait = 30;

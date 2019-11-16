@@ -43,7 +43,7 @@ public class LoginPage extends TestBase
 	{
 		username.sendKeys(uname);
 		password.sendKeys(pword);
-		//loginButton.click();
+		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", loginButton);
 				

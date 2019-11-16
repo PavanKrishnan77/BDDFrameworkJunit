@@ -7,12 +7,14 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions
-		(features = {"D:\\Automation_Workspace\\BDDFrameworkJunit\\src\\main\\java\\com\\crm\\qa\\Features\\LoginFeature_2.feature"}, 
+		(features = {"src/main/java/com/crm/qa/Features"}, 
 		glue= {"com.crm.qa.StepDefinitions"}, 
 		plugin = {"pretty", "html:test-output", "junit:junit_xml/cucumber.xml"}, 
 		monochrome = true, 
 		strict = true,
-		dryRun=false)
+		dryRun=true,
+		tags={"@SanityTest"})
+		//tags={"@SanityTest, @SmokeTest"})
 
 public class TestRunnerFile 
 {
