@@ -13,8 +13,8 @@ import cucumber.api.junit.Cucumber;
 		monochrome = true, 
 		strict = true,
 		dryRun=false,
-		//tags={"@SmokeTest"})
-		tags={"@SanityTest, @RegressionTest"})
+		tags={"@HooksConcept"})
+		//tags={"@SanityTest, @RegressionTest"})
 
 public class TestRunnerFile 
 {

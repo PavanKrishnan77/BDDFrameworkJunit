@@ -1,376 +1,171 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("LoginPage.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Hooks.feature");
 formatter.feature({
   "line": 2,
-  "name": "CRM Application Login Test",
-  "description": "Description: To Test the Login Functionality of CRM Application",
-  "id": "crm-application-login-test",
+  "name": "Hooks in Cucumber",
+  "description": "Description: Hooks Concept in Cucumber",
+  "id": "hooks-in-cucumber",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@CRMLoginTest"
+      "name": "@HooksConcept"
     }
   ]
 });
-formatter.scenarioOutline({
-  "comments": [
-    {
-      "line": 5,
-      "value": "#Normal Login - Taking UserName and Password from Property File"
-    },
-    {
-      "line": 6,
-      "value": "#@SmokeTest"
-    },
-    {
-      "line": 7,
-      "value": "#Scenario: Free CRM Login Test"
-    },
-    {
-      "line": 8,
-      "value": "#Given User is already on Login Page"
-    },
-    {
-      "line": 9,
-      "value": "#When Title of Login Page is Free CRM"
-    },
-    {
-      "line": 10,
-      "value": "#Then User enters username and password and click on login button"
-    },
-    {
-      "line": 11,
-      "value": "#Then User is on Home Page"
-    },
-    {
-      "line": 13,
-      "value": "#Logging in Using Scenario Outline - Achieving Data Driven Approach"
-    }
-  ],
-  "line": 15,
-  "name": "Free CRM Login Test",
-  "description": "",
-  "id": "crm-application-login-test;free-crm-login-test",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 14,
-      "name": "@SanityTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 16,
-  "name": "User is already on Login Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "Title of Login Page is Free CRM",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 18,
-  "name": "User enters \"\u003cUsername\u003e\" and \"\u003cPassword\u003e\" and click on login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "User is on Home Page",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 21,
-  "name": "",
-  "description": "",
-  "id": "crm-application-login-test;free-crm-login-test;",
-  "rows": [
-    {
-      "cells": [
-        "Username",
-        "Password"
-      ],
-      "line": 22,
-      "id": "crm-application-login-test;free-crm-login-test;;1"
-    },
-    {
-      "cells": [
-        "pavanreddy",
-        "Saibaba77"
-      ],
-      "line": 23,
-      "id": "crm-application-login-test;free-crm-login-test;;2"
-    },
-    {
-      "cells": [
-        "pavanreddy",
-        "Saibaba77"
-      ],
-      "line": 24,
-      "id": "crm-application-login-test;free-crm-login-test;;3"
-    }
-  ],
-  "keyword": "Examples"
+formatter.before({
+  "duration": 738936,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 23,
-  "name": "Free CRM Login Test",
+  "line": 5,
+  "name": "Add new Customer",
   "description": "",
-  "id": "crm-application-login-test;free-crm-login-test;;2",
+  "id": "hooks-in-cucumber;add-new-customer",
   "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 14,
-      "name": "@SanityTest"
-    },
-    {
-      "line": 1,
-      "name": "@CRMLoginTest"
-    }
-  ]
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 16,
-  "name": "User is already on Login Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "Title of Login Page is Free CRM",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 18,
-  "name": "User enters \"pavanreddy\" and \"Saibaba77\" and click on login button",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "User is on Home Page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginPageTest.user_is_already_on_Login_Page()"
-});
-formatter.result({
-  "duration": 14460514843,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginPageTest.title_of_login_page_is_Free_CRM()"
-});
-formatter.result({
-  "duration": 52817616,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "pavanreddy",
-      "offset": 13
-    },
-    {
-      "val": "Saibaba77",
-      "offset": 30
-    }
-  ],
-  "location": "LoginPageTest.user_enters_and_and_click_on_login_button(String,String)"
-});
-formatter.result({
-  "duration": 6965840690,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginPageTest.user_is_on_home_page()"
-});
-formatter.result({
-  "duration": 14837169,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 24,
-  "name": "Free CRM Login Test",
-  "description": "",
-  "id": "crm-application-login-test;free-crm-login-test;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 14,
-      "name": "@SanityTest"
-    },
-    {
-      "line": 1,
-      "name": "@CRMLoginTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 16,
-  "name": "User is already on Login Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "Title of Login Page is Free CRM",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 18,
-  "name": "User enters \"pavanreddy\" and \"Saibaba77\" and click on login button",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "User is on Home Page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginPageTest.user_is_already_on_Login_Page()"
-});
-formatter.result({
-  "duration": 15131300432,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginPageTest.title_of_login_page_is_Free_CRM()"
-});
-formatter.result({
-  "duration": 13198806,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "pavanreddy",
-      "offset": 13
-    },
-    {
-      "val": "Saibaba77",
-      "offset": 30
-    }
-  ],
-  "location": "LoginPageTest.user_enters_and_and_click_on_login_button(String,String)"
-});
-formatter.result({
-  "duration": 5940836060,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginPageTest.user_is_on_home_page()"
-});
-formatter.result({
-  "duration": 18462841,
-  "status": "passed"
-});
-formatter.uri("Tags.feature");
-formatter.feature({
-  "line": 2,
-  "name": "Tags in Cucumber",
-  "description": "Description: To Test Tags Concept",
-  "id": "tags-in-cucumber",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@Tags"
-    }
-  ]
-});
-formatter.scenario({
   "line": 6,
-  "name": "Verify Login",
-  "description": "",
-  "id": "tags-in-cucumber;verify-login",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 5,
-      "name": "@SmokeTest"
-    },
-    {
-      "line": 5,
-      "name": "@RegressionTest"
-    }
-  ]
+  "name": "User is on Add Customer Page",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 7,
-  "name": "This is a Valid Login Test",
-  "keyword": "Given "
+  "name": "User fills the Customer Details",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "New Customer is Added",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "TagsTest.this_is_a_Valid_Login_Test()"
+  "location": "HooksTest.user_is_on_Add_Customer_Page()"
 });
 formatter.result({
-  "duration": 154412,
+  "duration": 286976301,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HooksTest.user_fills_the_Customer_Details()"
+});
+formatter.result({
+  "duration": 578927,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HooksTest.new_Customer_is_Added()"
+});
+formatter.result({
+  "duration": 123156,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 117558,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 902211,
   "status": "passed"
 });
 formatter.scenario({
   "line": 10,
-  "name": "Verify Logout",
+  "name": "Edit Customer",
   "description": "",
-  "id": "tags-in-cucumber;verify-logout",
+  "id": "hooks-in-cucumber;edit-customer",
   "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 9,
-      "name": "@SanityTest"
-    },
-    {
-      "line": 9,
-      "name": "@RegressionTest"
-    }
-  ]
+  "keyword": "Scenario"
 });
 formatter.step({
   "line": 11,
-  "name": "This is a Valid Logout Test",
+  "name": "User is on Edit Customer Page",
   "keyword": "Given "
 });
+formatter.step({
+  "line": 12,
+  "name": "User Edits Customer Details",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 13,
+  "name": "Customer details are Updated",
+  "keyword": "Then "
+});
 formatter.match({
-  "location": "TagsTest.this_is_a_Valid_Logout_Test()"
+  "location": "HooksTest.user_is_on_Edit_Customer_Page()"
 });
 formatter.result({
-  "duration": 133887,
+  "duration": 143215,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HooksTest.user_Edits_Customer_Details()"
+});
+formatter.result({
+  "duration": 122223,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HooksTest.customer_details_are_Added()"
+});
+formatter.result({
+  "duration": 132019,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 128754,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 401190,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 14,
-  "name": "Verify Search",
+  "line": 15,
+  "name": "Delete Customer",
   "description": "",
-  "id": "tags-in-cucumber;verify-search",
+  "id": "hooks-in-cucumber;delete-customer",
   "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 13,
-      "name": "@RegressionTest"
-    }
-  ]
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 15,
-  "name": "This is a Search Test",
+  "line": 16,
+  "name": "User is on Delete Customer Page",
   "keyword": "Given "
 });
+formatter.step({
+  "line": 17,
+  "name": "User deletes Customer",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 18,
+  "name": "Customer is Deleted",
+  "keyword": "Then "
+});
 formatter.match({
-  "location": "TagsTest.this_is_a_Search_Test()"
+  "location": "HooksTest.user_is_on_Delete_Customer_Page()"
 });
 formatter.result({
-  "duration": 143216,
+  "duration": 126422,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HooksTest.user_deletes_Customer()"
+});
+formatter.result({
+  "duration": 125955,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HooksTest.customer_is_Deleted()"
+});
+formatter.result({
+  "duration": 127821,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 97965,
   "status": "passed"
 });
 });

@@ -1,28 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="42.598239">
-<testcase classname="CRM Application Login Test" name="Free CRM Login Test" time="21.49401">
-<system-out><![CDATA[Given User is already on Login Page.........................................passed
-When Title of Login Page is Free CRM........................................passed
-Then User enters "pavanreddy" and "Saibaba77" and click on login button.....passed
-Then User is on Home Page...................................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.290842">
+<testcase classname="Hooks in Cucumber" name="Add new Customer" time="0.288535">
+<system-out><![CDATA[Given User is on Add Customer Page..........................................passed
+When User fills the Customer Details........................................passed
+Then New Customer is Added..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="CRM Application Login Test" name="Free CRM Login Test 2" time="21.103798">
-<system-out><![CDATA[Given User is already on Login Page.........................................passed
-When Title of Login Page is Free CRM........................................passed
-Then User enters "pavanreddy" and "Saibaba77" and click on login button.....passed
-Then User is on Home Page...................................................passed
+<testcase classname="Hooks in Cucumber" name="Edit Customer" time="0.001428">
+<system-out><![CDATA[Given User is on Edit Customer Page.........................................passed
+When User Edits Customer Details............................................passed
+Then Customer details are Updated...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tags in Cucumber" name="Verify Login" time="0.000154">
-<system-out><![CDATA[Given This is a Valid Login Test............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Tags in Cucumber" name="Verify Logout" time="0.000134">
-<system-out><![CDATA[Given This is a Valid Logout Test...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Tags in Cucumber" name="Verify Search" time="0.000143">
-<system-out><![CDATA[Given This is a Search Test.................................................passed
+<testcase classname="Hooks in Cucumber" name="Delete Customer" time="0.000879">
+<system-out><![CDATA[Given User is on Delete Customer Page.......................................passed
+When User deletes Customer..................................................passed
+Then Customer is Deleted....................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
