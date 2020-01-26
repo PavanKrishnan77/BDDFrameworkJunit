@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.290842">
-<testcase classname="Hooks in Cucumber" name="Add new Customer" time="0.288535">
-<system-out><![CDATA[Given User is on Add Customer Page..........................................passed
-When User fills the Customer Details........................................passed
-Then New Customer is Added..................................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="36.077025">
+<testcase classname="CRM Application Login Test" name="Free CRM Login Test" time="18.196893">
+<system-out><![CDATA[Given User is already on Login Page.........................................passed
+When Title of Login Page is Free CRM........................................passed
+Then User enters "Reddy77077" and "Saibaba77" and click on login button.....passed
+Then User is on Home Page...................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Hooks in Cucumber" name="Edit Customer" time="0.001428">
-<system-out><![CDATA[Given User is on Edit Customer Page.........................................passed
-When User Edits Customer Details............................................passed
-Then Customer details are Updated...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Hooks in Cucumber" name="Delete Customer" time="0.000879">
-<system-out><![CDATA[Given User is on Delete Customer Page.......................................passed
-When User deletes Customer..................................................passed
-Then Customer is Deleted....................................................passed
+<testcase classname="CRM Application Login Test" name="Free CRM Login Test 2" time="17.880132">
+<system-out><![CDATA[Given User is already on Login Page.........................................passed
+When Title of Login Page is Free CRM........................................passed
+Then User enters "Reddy77077" and "Saibaba77" and click on login button.....passed
+Then User is on Home Page...................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

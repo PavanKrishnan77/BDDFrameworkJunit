@@ -20,5 +20,5 @@ Description: To Test the Login Functionality of CRM Application
 
  		Examples: 
     	| Username   | Password  |
-      | pavanreddy | Saibaba77 |
-      | pavanreddy | Saibaba77 |
+      | Reddy77077 | Saibaba77 |
+      | Reddy77077 | Saibaba77 |

@@ -9,11 +9,11 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions
 		(features = {"src/main/java/com/crm/qa/Features"}, 
 		glue= {"com.crm.qa.StepDefinitions"}, 
-		plugin = {"pretty", "html:test-output", "junit:junit_xml/cucumber.xml"}, 
+		plugin = {"pretty", "html:test-output", "json:target/JsonReports/Cucumber-Report.json", "junit:junit_xml/cucumber.xml"}, 
 		monochrome = true, 
 		strict = true,
 		dryRun=false,
-		tags={"@HooksConcept"})
+		tags={"@CRMLoginTest"})
 		//tags={"@SanityTest, @RegressionTest"})
 
 public class TestRunnerFile 
