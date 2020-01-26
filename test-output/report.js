@@ -114,7 +114,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 1005294,
+  "duration": 729136,
   "status": "passed"
 });
 formatter.scenario({
@@ -163,14 +163,14 @@ formatter.match({
   "location": "LoginPageTest.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 11091307264,
+  "duration": 11215858412,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPageTest.title_of_login_page_is_Free_CRM()"
 });
 formatter.result({
-  "duration": 79152307,
+  "duration": 90814562,
   "status": "passed"
 });
 formatter.match({
@@ -187,22 +187,22 @@ formatter.match({
   "location": "LoginPageTest.user_enters_and_and_click_on_login_button(String,String)"
 });
 formatter.result({
-  "duration": 7010184956,
+  "duration": 7960952253,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPageTest.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 15085004,
+  "duration": 9000612,
   "status": "passed"
 });
 formatter.after({
-  "duration": 158608,
+  "duration": 101696,
   "status": "passed"
 });
 formatter.before({
-  "duration": 603176,
+  "duration": 287363,
   "status": "passed"
 });
 formatter.scenario({
@@ -251,14 +251,14 @@ formatter.match({
   "location": "LoginPageTest.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 10495374249,
+  "duration": 9572709308,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPageTest.title_of_login_page_is_Free_CRM()"
 });
 formatter.result({
-  "duration": 47642994,
+  "duration": 22174049,
   "status": "passed"
 });
 formatter.match({
@@ -275,18 +275,18 @@ formatter.match({
   "location": "LoginPageTest.user_enters_and_and_click_on_login_button(String,String)"
 });
 formatter.result({
-  "duration": 7320011830,
+  "duration": 11798592763,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPageTest.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 16381391,
+  "duration": 33004733,
   "status": "passed"
 });
 formatter.after({
-  "duration": 118490,
+  "duration": 184734,
   "status": "passed"
 });
 });
